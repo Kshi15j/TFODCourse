@@ -48,6 +48,6 @@ KeyError: 'ThumbsDown' # YOUR LABEL HERE
 
 
 Template
-<b>Error:</b> <br/>
-<b>Solution:</b> 
+<b>Error:Running the code gives 'ValueError: tf.function-decorated function tried to create variables on non-first call'</b> <br/>
+<b>Solution:As you are trying to use function decorator in TF 2.0, please enable run function eagerly by using below line after importing TensorFlow: tf.config.run_functions_eagerly(True)</b> 
 <pre></pre>
